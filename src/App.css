@@ -1,0 +1,13 @@
+.slide-wrapper {
+
+  transition: height 0.3s ease; /* Smooth transition for height change */
+}
+
+.slide-wrapper:hover {
+  height: 400px; /* Adjust the height as desired */
+}
+
+.slide-image:hover {
+  height: 400px;
+
+}

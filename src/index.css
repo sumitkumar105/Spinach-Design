@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "Haffer SQ XH";
+  src: url("./Fonts/HafferSQXH-Light.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Haffer SQ XH";
+  src: url("./Fonts/HafferSQXH-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Haffer SQ XH";
+  src: url("./Fonts/HafferSQXH-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Haffer SQ XH";
+  src: url("./Fonts/HafferSQXH-Bold.ttf");
+  font-weight: 700;
+}
+body {
+  margin: 0;
+  padding:0;
+  font-family: "Haffer SQ XH";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+
+@media screen and (min-width: 768px) {
+  .side__line {
+    display: block;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    z-index: 1000;
+    width: 6px;
+  }
+  .side__line.side__line--left {
+    left: 100px;
+    
+  }
+  .side__line.side__line--right {
+    right: 100px;
+  }
+  
+  
+  .side__line::after {
+    content: "";
+    width: 1px;
+    height: 100%;
+    background: rgba(148, 148, 148, 0.15);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+  }
+  .side__line .line__bar {
+    width: 100%;
+    height: 132px;
+    background: #000e8c;
+    position: relative;
+    z-index: 1;
+    transition: 0.1s ease;
+  }
+  .side__line.side__line--left .line__bar {
+    top: 16%;
+  }
+  .side__line.side__line--right .line__bar {
+    top: 82%;
+  }
+}
